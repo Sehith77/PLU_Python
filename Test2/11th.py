@@ -1,0 +1,10 @@
+# 11.Display the front element of the queue without removing it
+queue = []
+
+queue.append(10)
+queue.append(20)
+queue.append(30)
+queue.append(40)
+
+
+print("Front element =", queue[0])

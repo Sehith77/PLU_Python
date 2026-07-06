@@ -8,7 +8,7 @@ def sub(a,b):
 def mul(a,b):
     return a*b
 
-def div(a,b):
+def div(a,b):git clone
     return a/b
 
 def calc():
@@ -37,3 +37,18 @@ def calc():
         print(out)
     else:
         print("Invalid operator")
+        
+class abc:
+    def __init__(self, name):
+        self.name = name
+
+    def __repr__(self):
+        return f"{self.name} is the owner of the class"
+
+
+obj = abc("Snehith")
+
+print(repr(obj))
+
+
+
