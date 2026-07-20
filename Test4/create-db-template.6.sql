@@ -1,0 +1,28 @@
+USE company;
+
+CREATE TABLE Course (
+    CourseID INT PRIMARY KEY,
+    CourseName VARCHAR(50)
+);
+
+CREATE TABLE Student (
+    StudentID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    CourseID INT
+);
+
+INSERT INTO Course (CourseID, CourseName)
+VALUES
+(201, 'Python'),
+(202, 'SQL');
+
+INSERT INTO Student (StudentID, Name, CourseID)
+VALUES
+(1, 'Rahul', 201),
+(2, 'Neha', 202),
+(3, 'Aman', NULL);
+
+SELECT Student.Name, Course.CourseName
+FROM Student
+LEFT JOIN Course
+ON Student.CourseID = Course.CourseID;
